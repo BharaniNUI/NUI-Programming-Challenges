@@ -1,18 +1,18 @@
-function stringSplit(str, num) {
-    let arr = str.split("")
-    let arr1 = []
+function stringSplit(string, num) {
+    let array = string.split("")
+    let resultArray = []
 
-    for (let i = 0; i < arr.length; i + 2) {
-        let sp = ""
+    for (let i = 0; i < array.length; i + 2) {
+        let splitedString = ""
         for (let j = 0; j < num; j++) {
-            if(arr[i]){
-                sp += arr[i]
+            if (array[i]) {
+                splitedString += array[i]
             }
             i++
         }
-        arr1.push(sp)
+        resultArray.push(splitedString)
     }
-    return arr1
+    return resultArray
 }
 
 console.log(stringSplit("numenticaui", 2))

@@ -1,13 +1,13 @@
-function removeDuplicates(arr) {
+function removeDuplicates(array) {
     let j = 1
-    let arr2 = []
-    for (let i = 0; i < arr.length; i++) {
-        if (arr2.includes(arr[i])) {
+    let resultArray = []
+    for (let i = 0; i < array.length; i++) {
+        if (resultArray.includes(array[i])) {
             j++
         } else {
-            arr2.push(arr[i])
+            resultArray.push(array[i])
         }
     }
-    return arr2
+    return resultArray
 }
 console.log(removeDuplicates([1, "two", "two", 3, "two"]))

@@ -1,11 +1,11 @@
-function filterOut(arr, filter) {
-    let arr1 = []
-    for (let i of arr) {
+function filterOut(array, filter) {
+    let resultArray = []
+    for (let i of array) {
         if (typeof i != filter) {
-            arr1.push(i)
+            resultArray.push(i)
         }
     }
-    return arr1
+    return resultArray
 
 }
 

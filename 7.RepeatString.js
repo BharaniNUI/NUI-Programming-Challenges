@@ -1,9 +1,9 @@
-function repeatString(str, num) {
-    let rep = ""
+function repeatString(string, num) {
+    let repeatedString = ""
     for (let i = 1; i <= num; i++) {
-        rep += str
+        repeatedString += string
     }
-    return rep
+    return repeatedString
 }
 
 console.log(repeatString('arun', 3))
