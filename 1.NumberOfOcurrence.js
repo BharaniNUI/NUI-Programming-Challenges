@@ -1,14 +1,8 @@
 function findNumberOfOccurance(sentence, word) {
-    let count = 0
-    let array = []
+    let count
     sentence = sentence.toLowerCase()
     word = word.toLowerCase()
-    array = sentence.split(" ")
-    for (let i of array) {
-        if (i.includes(word)) {
-            count++
-        }
-    }
+    count = sentence.split(word).length-1
     return count
 
 }
